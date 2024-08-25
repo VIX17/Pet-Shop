@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <link rel="stylesheet" href="src/styles/testimonials.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Landin page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-star" id="nav_logo"> PetStar</i>
+            
+             <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#menu">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials">Serviços</a>
+                </li>
+                
+
+             </ul>
+           
+             <button class="btn-default">
+                Login
+             </button>
+
+             <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+             </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#menu">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials">Serviços</a>
+                </li>
+             </ul>
+
+             
+             <button class="btn-default">
+                Login
+             </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Bem-vindo ao
+                    <span>StarPets</span>
+                </h1>
+
+                <p class="description">
+                    Aqui no nosso Pet Shop, cuidamos dos seus amigos de quatro patas como se fossem parte da nossa própria família. Oferecemos uma experiência única, onde o bem-estar dos pets é nossa prioridade máxima. Com uma equipe dedicada e apaixonada por animais, garantimos que cada visita seja repleta de carinho, atenção e produtos da mais alta qualidade. Desde a seleção cuidadosa de alimentos nutritivos até os serviços de estética que deixam seu pet ainda mais lindo, fazemos de tudo para que eles tenham uma vida saudável e feliz.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="@" class="btn-default">
+                        Ver produtos
+                    </a>
+
+                    <a href="tel:+555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (75) 99850-9645
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/dog.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Produtos e serviços</h2>
+            <h3 class="section-subtitle">Nossos artigos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/banho.png" class="dish-image" alt="sorveteB">
+
+                    <h3 class="dish-title">
+                        Tosa e Banho
+                    </h3>
+
+                    <span class="dish-description">
+                        Oferecemos tosa e banho personalizados para seu pet, com produtos de qualidade e cuidados especiais para deixá-lo limpo, cheiroso e confortável.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$50,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/vet.png" class="dish-image" alt="sorveteP">
+
+                    <h3 class="dish-title">
+                        Consulta Vet
+                    </h3>
+
+                    <span class="dish-description">
+                        Nossas consultas veterinárias oferecem atendimento especializado para garantir a saúde e bem-estar do seu pet, com diagnósticos precisos e orientações para cuidados preventivos.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$90,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/raçao.jpg" class="dish-image" alt="sorveteP">
+
+                    <h3 class="dish-title">
+                        Premier Pet Golden
+                    </h3>
+
+                    <span class="dish-description">
+                        Ração para Cães Filhotes, Sabor Carne e Arroz, 15kg
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$120,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/petisco.jpg" class="dish-image" alt="sorveteP">
+
+                    <h3 class="dish-title">
+                        Cookie Premier 
+                    </h3>
+
+                    <span class="dish-description">
+                        Petiscos para cães e filhotes 250g
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$25,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/test.png" id="testimonials_dog" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Nossos Profissionais
+                </h2>
+                <h3 class="section-subtitle">
+                    Dê uma olhadinha nos nossos Vets
+                </h3>
+
+                <div id="vets">
+                    <div class="vets">
+                        <img src="src/images/vet 1.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dr. Gustave
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Nosso veterinário especialista em gatos oferece atendimento dedicado e conhecimento profundo sobre as necessidades e peculiaridades dos felinos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 2.jpg" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Ana
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Além de sua expertise clínica, a Dr.a Ana é conhecida por seu carinho e empatia, criando um ambiente acolhedor tanto para os pets quanto para seus donos.</p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 3.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Aline
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Especializada em clinicas, a Dra. Aline acredita que cada animal é único e merece uma atenção especial.</p>
+                        </div>
+                    </div>
+
+                    <div class="vets">
+                        <img src="src/images/vet 4.png" class="vets-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Dra. Diana
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                A Dra. Diana é uma especialista apaixonada por oferecer o melhor em cuidados veterinários. Com uma formação robusta e 15 anos de experiência prática, ela é reconhecida por seu conhecimento abrangente e seu carinho pelos animais.</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <button class="btn-default"> 
+                    Ver mais Médicos
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
